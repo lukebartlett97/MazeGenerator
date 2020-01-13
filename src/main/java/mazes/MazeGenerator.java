@@ -47,7 +47,6 @@ public class MazeGenerator
       flowSolver.solveBasic(copyMaze);
       if(isFlowValid(copyMaze, validPoints))
       {
-        System.out.println("---" + selected);
         if(route.size() < 3 || isRouteValid(copyMaze, new ArrayList<>(route), new ArrayList<>()))
         {
           maze.get(selected.x, selected.y).space = WALL;

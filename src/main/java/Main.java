@@ -3,6 +3,7 @@ import mazes.FlowSolver;
 import mazes.Maze;
 import mazes.MazeGenerator;
 import mazes.savedPatterns.QRCode;
+import mazes.savedPatterns.Smile;
 import mazes.templates.ManualPieceTemplate;
 import mazes.templates.MazeTemplate;
 import mazes.templates.RingsTemplate;
@@ -18,7 +19,7 @@ public class Main
   public static void main(String[] args) throws IOException, InterruptedException
   {
     MazeGenerator gen = new MazeGenerator();
-    Maze maze = gen.createMaze(20,20, 0, 10, 19, 10, null, 2);
+    Maze maze = gen.createMaze(60,60, 0, 20, 59, 40, QRCode.getTemplates(60), 0);
     maze.printMaze();
     //FlowSolver solution = new FlowSolver();
     //solution.solve(maze);
@@ -28,3 +29,6 @@ public class Main
 
   }
 }
+
+
+

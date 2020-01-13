@@ -4,7 +4,7 @@ import mazes.Maze;
 
 import java.util.List;
 
-public class IslandTemplate implements MazeTemplate
+public class RectangleTemplate implements MazeTemplate
 {
 
 
@@ -14,12 +14,12 @@ public class IslandTemplate implements MazeTemplate
   private int endX;
   private int endY;
 
-  public IslandTemplate(int startX, int startY, int endX, int endY)
+  public RectangleTemplate(int startX, int startY, int endX, int endY)
   {
     this(startX, startY, endX, endY, Maze.WALL);
   }
 
-  public IslandTemplate(int startX, int startY, int endX, int endY, char piece)
+  public RectangleTemplate(int startX, int startY, int endX, int endY, char piece)
   {
     this.startX = startX;
     this.startY = startY;

@@ -26,7 +26,7 @@ public class Maze extends Canvas
   {
     drawn = true;
     frame = new JFrame(("Maze"));
-    setSize(400, 400);
+    setSize(800, 800);
     frame.add(this);
     frame.pack();
     frame.setVisible(true);
@@ -54,7 +54,7 @@ public class Maze extends Canvas
     {
       this.drawn = true;
       frame = new JFrame(("Maze"));
-      setSize(400, 400);
+      setSize(800, 800);
       frame.add(this);
       frame.pack();
       frame.setVisible(true);
